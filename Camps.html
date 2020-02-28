@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Manchester Ruhi Institute Camps</title>
+    <meta name="describtion" content="Walking the path of service">
+    <meta name="Author" content="LSA of Manchester">
+    <link rel="icon" href="https://findicons.com/files/icons/684/vistoon/128/globe.png">
+    <meta name="keywords" content="Community building, Book, Community, Neighborhood, patterns of life, bahais of Manchester, camps, community action">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="yellow">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+    <meta charset="utf-8"> 
+    <link rel="canonical" href="https://mcrbirds.org.uk">
+    <!--H1 family font import-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!--Jquery Import-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    
+</head>
+
+<body>
+    <div class="main-container">
+      
+        <div class="header-title">
+            <img src="./assets/camps-photos/bee.JPG" style=" position: relative; align-items: left;" >
+            <h1 class="title" title="Manchester Institute camp">Manchester Ruhi Institute Camps</h1>
+        </div>
+        <div class="nav">
+             <ul class="fa-ul">
+                <li class="navi"><a href="./Camps.html" ><span class="fa-li"></span><i class="fas fa-campground"></i> Ruhi Camps</a> </li>
+                <li class="navi"><a href="https://www.manchesterbahais.org.uk/community-building" ><span class="fa-li"></span><i class="fas fa-user-friends"></i> Community Building</a></li>
+            </ul>
+        </div>
+
+        <!--The Markup for the quote section of the Camps page-->
+        <div class="quote">
+            <p id="announcement"><strong style="color: gold;">Announcement: </strong> Happy to announce an upcoming Ruhi Camp this spring on the 3rd of April <!--This is the modal code section for Future Camps Announcement-->
+                <button class="trigger" style="background-color: gold;"> Find more information!</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h1>You are lucky we still have vacancies for the upcoming Spring Camp!</h1>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOTAWAlSZSj0Ib4bbRpLqSp1OJ10JS0im4Z2G2OxaWHXfwcA/viewform" class="button"> Register now!</a>
+                    </div>
+                </div>
+             </p>
+        </div>
+        <script>
+            var modal = document.querySelector(".modal");
+            var trigger = document.querySelector(".trigger");
+            var closeButton = document.querySelector(".close-button");
+
+            function toggleModal(){
+                modal.classList.toggle("show-modal");
+            }
+            function windowOnClick(event){
+                if(event.target == modal){
+                    toggleModal();
+                }
+            }
+
+            trigger.addEventListener("click", toggleModal);
+            closeButton.addEventListener("click", toggleModal);
+            window.addEventListener("click", windowOnClick);
+        </script>
+
+        <!--The Markup for the about section of the Camps page-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BkbdjYaFlNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>      
+
+        <!--The Markup for the quote section of the Camps page-->
+        <div class="about">
+
+             <a class="bahai-blog" href="https://www.bahaiblog.net/2017/01/journey-soul-illustrated-reflection/">
+            <div class="para" id="Bee-transformation">
+                <h2 class="about-title">Serving the Neighborhood, Transformation stories </h2>
+                <p>
+                    
+                        <ul class="bahai-blog">
+                            <a href="https://www.bahaiblog.net/2012/01/junior-youth-matter-4-principles-for-social-transformation/">
+                            <li>Junior Youth Matter: 4 Principles for Social Transformation</li>
+                            </a>
+                            <br>
+                            <a href="https://personalreflections.bahaiblog.net/">
+                            <li>Personal reflections on the Bahai faith from around the world</li>
+                            </a>
+                            <br>
+                            <a href="https://www.bahaiblog.net/2014/12/clean-cut-clean-start-nasir-helping-homeless/">
+                            <li>Clean Cut, Clean Start – How Nasir is Helping the Homeless</li>
+                            </a>   
+                        </ul>
+                </p>
+            </div>
+            </a>
+            <a class="bahai-blog" href="https://bahaiteachings.org/bahai-focus-building-community/">
+            <div class="para">
+                    <h2 class="about-title">Community building and spirtual transformation</h2>
+                    <p>
+                    "The Baha’i approach to social transformation differs from most contemporary approaches,<br> 
+                    focusing less on material resources and more on the core of social change—the people.<br>
+                    This translates into a process of community building, which means strengthening both the<br>
+                    spiritual and material nature of the community through a grassroots approach.<br>
+                    This means that capacity is gradually developed in the community, until it can branch<br>
+                    out and influence nearby communities, with growing degrees of complexity.""
+                     </p> 
+            </div>
+            </a>
+        </div>
+
+          <!--The Markup for the slides1 section-->
+          <div class="slides">
+            <div id="slideshow">
+               <div>
+                 <img src="./assets/camps-photos/2020/evening6.jpeg" width="350" height="350">
+               </div>
+               <div>
+                 <img src="./assets/camps-photos/2020/IMG_1522.jpg" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/Evening4.jpeg" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/art4.JPEG" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/art5.JPEG" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/art8.JPEG" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/art11.JPEG" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2019/ARTT.JPG" width="350" height="350">
+               </div>
+               <div>
+                   <img src="./assets/camps-photos/2020/25thJuly/Group-photos/25thJuly2019Camp.JPEG" width="350" height="350">
+               </div>
+            </div>
+            </div>
+               <script>
+               $("#slideshow > div:gt(0)").hide();
+   
+               setInterval(function() {
+               $('#slideshow > div:first')
+                   .fadeOut(1000)
+                   .next()
+                   .fadeIn(1000)
+                   .end()
+                   .appendTo('#slideshow');
+               }, 3000);
+            </script>
+
+            
+
+        <!--The Markup for the about section of the Camps page-->
+        <div class="about">
+            <div class="para">
+                <h2 class="about-title">What is the Ruhi Institute?</h2>
+                <p class="paragraph">
+                    The Ruhi Institute’s main sequence of courses is organized so as to set the individual “
+                    . . . on a path being defined by the accumulating experience of the community in its 
+                    endeavour to open before humanity the vision of Bahá’u’lláh’s World Order.”
+                </p>
+            </div>
+
+            <div class="para" id="para2">
+                <h2 class="about-title">What is a path of service?</h2>
+                <p class="paragraph">
+                    “To walk a path is a concept equally expressive.<br> It requires of the individual volition 
+                    and choice; it calls for a set of skills and abilities but also elicits certain qualities
+                    and attitudes; it necessitates a logical progression but admits, when needed, related lines 
+                     of exploration; it may seem easy at the outset but becomes more challenging further along.”
+                </p>
+            </div>
+        </div>
+
+         <!--The Markup for the camps section of the Camps page-->
+        <div class="register">
+            <h4></h4>
+            <p></p>
+        </div>
+    
+         <!--The Markup for the footer section of the Camps page-->
+        <footer class="site-footer">
+            <div class="section-inner">
+                        <!-- Footer Contact section-->
+                        <div class="footer-content">
+                            <h4 class="site-footer-heading"> Ruhi Training Camps <strong style="color: gold;"> Manchester </strong><br>
+                            <a class="contact-email" href="mailto:manchesterruhi@gmail.com">ManchesteRruhi@gmail.com</a> </h4>
+                        </div>
+
+                        <div class="embed-form">    
+                        <!-- Begin Mailchimp Signup Form -->
+                                <form action="https://gmail.us4.list-manage.com/subscribe/post?u=239defb3e0f2531b299d18f71&amp;id=60c1c824b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                    <p>Stay tuned to upcoming Ruhi Camp News in Manchester:</p>
+                                    <label for="mce-EMAIL">Email Address:</label>
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                    </div>
+                                </form>
+                        <!--End mc_embed_signup-->
+                        </div>   
+
+            </div>
+
+            <small>&copy2020, Manchester Bahai Community</small> 
+        </footer>
+
+
+
+        </div>
+        <!--The end of the main-container section-->
+
+
+        <!--The newsletter subscription-->
+        <div class="newsletter">
+            <div class="embed-form">    
+                <!-- Begin Mailchimp Signup Form -->
+                        <form action="https://gmail.us4.list-manage.com/subscribe/post?u=239defb3e0f2531b299d18f71&amp;id=60c1c824b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                            <p>Stay tuned to upcoming Ruhi Camp News in Manchester:</p>
+                            <label for="mce-EMAIL"></label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                <!--End mc_embed_signup-->
+                </div> 
+        </div>
+  
+</body>
+</html>

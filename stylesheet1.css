@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+      height: 100%;
+  }
+/*----------------------------------------------------------- -------------------
+                                GLOBAL STYLES
+---------------------------------------------------------------------------------*/
+:root{
+    --main-bg-color: rgb(236, 240, 14);
+    --footer-font-color: rgb(236, 238, 235);
+    --newsletter-font-color: gold;
+}
+
+/*----------------------------------------------------------- -------------------
+                                      COLOR GUIDE7
+                                      GOLD: rgb(172, 140, 71)
+                                      WHITE:
+---------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- -------------------
+                                GLOBAL STYLES
+---------------------------------------------------------------------------------*/
+  .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        font-size: 16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(249, 250, 244);
+        /* background-image: url(./blue-snow.PNG) ; */
+        /* opacity: 1;
+        background-repeat: no-repeat;
+        background-size: cover;  */
+    }
+/*----------------------------------------------------------------
+                        Navigation links style guide
+------------------------------------------------------------------*/
+  .main-container .header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gold;
+        background-image: url("./assets/ruhiInstitute.JPEG");
+        background-repeat: no-repeat;
+        background-size:  200px auto;
+        /* background: linear-gradient(    180deg,
+        rgba(238, 142, 53, 0.211) 0%,
+        rgba(212, 40, 10, 0.463) 100%);  */
+    }
+    .header-title h1{
+        font-size: 44px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 5px;
+        padding: 5px;
+    }
+/*----------------------------------------------------------------
+                        Navigation links style guide
+------------------------------------------------------------------*/
+    .main-container .nav{
+        display: flex;
+        width: 100%;
+        margin: 0 0 0em 0;
+        padding: 5px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ccc;
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        align-self: auto;
+        flex-flow: column wrap ;
+        align-items: center;
+
+        list-style: none;
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .nav li:nth-of-type(1) {
+        font-family: "oswald", sans-serif;
+        font-size: 1.2em;
+        padding: 0px 15px;
+        line-height: 2px;
+    }
+    .nav li:nth-of-type(2){
+        font-family: "oswald", sans-serif;
+        font-size: 1.2em;
+        padding: 0px 15px;
+        line-height: 2px;
+    }
+ 
+    .nav li a{
+        display: block;
+        padding: 8px 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(24, 23, 21);
+        background-color: none;
+    }
+    .nav .camps a:hover{
+        color:  #fff;
+	    background-color: gold;
+    }
+    .nav li a:hover{
+        color:  #fff;
+        background-color: gold;
+        transition: 0.5s color background-color;
+        /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+    }
+    
+
+/************************************************************
+              Upcoming camps Advert section style guide
+*************************************************************/
+  .main-container .quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-flow: column wrap;
+    padding: 10px 10px;
+    margin: 0px; */
+  }
+
+  .quote #announcement{
+      flex: 1 1 auto;
+      margin: 20px 0px 40px 0px;
+      padding: 20px 20px;
+      background-color: #f2f2f2;
+      border: 2px solid yellow;
+
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      overflow: hidden;
+
+      box-sizing: border-box;
+  }
+  button.trigger:hover{
+      box-shadow: burlywood;
+      box-shadow: 0 0 20px rgba(222, 184, 135, 0.7);
+  }
+    /* animation:
+    typing 4s steps(70),
+    blink-caret 0.75s infinite alternate; */
+
+/* @keyframes typing{
+    from{   width: 0%;   }
+    to{     width: 88%; }
+}
+@keyframes blink-caret{
+    from, to{   border-color: transparent;  }
+    50%{    border-color: rgb(85, 128, 148);     }
+} */
+/************************************************************
+              Camps Video section
+*************************************************************/
+.video-container{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #f2f2f2;
+    border: 2px solid yellow;
+
+    position: relative;
+    padding-top: 25px;
+
+}
+
+.video-Wrapper iframe{
+    position: absolute;
+    top: 0;
+}
+/************************************************************
+              Camps Transformation Story
+*************************************************************/
+.about{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+.about .para{
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #f2f2f2;
+    border: 2px solid yellow;
+}
+.para .about-title{
+    flex:1 1 auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+}
+.bahai-blog{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit   ;
+    font-family: inherit ;
+    font-weight: inherit ;
+    line-height: inherit ;
+}
+.about .bahai-blog a{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit   ;
+    font-family: inherit ;
+    font-weight: inherit ;
+    line-height: inherit ;
+}
+
+
+
+#bee-transformation{
+    /* The idea is to make this into two grid a photo and a story */
+}
+/************************************************************
+              Upcoming camps Modal section style guide
+*************************************************************/
+.modal{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button{
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: gold;
+}
+.close-button:hover{
+    background-color: goldenrod;
+
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/*----------------------------------------------------------- -------------------
+                                 Slider Styles
+---------------------------------------------------------------------------------*/
+.main-container .slides{
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+#slideshow {
+    margin: 30px auto;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+/*------------------------------------------------------------------------------
+                                 Camp Styles
+---------------------------------------------------------------------------------*/
+.register{
+    display: flex;
+    flex-flow: column wrap ;
+    align-items: center;
+
+    font-size: 18px;
+    margin: 50px 30px;
+    padding: 20px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid yellow;
+}
+
+
+h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+}
+
+/*------------------------------------------------------------------------------
+                                 Camp Styles
+---------------------------------------------------------------------------------*/
+.newsletter{
+    visibility: hidden;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    
+    /* background: url(./assets/camps-photos/bee.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:  390px 100px; */
+}
+
+/* .newsletter form{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.newsletter p{
+    color: var(--newsletter-font-color) ;
+} */
+
+
+/*----------------------------------------------------------- -------------------
+                                 FOOTER STYLES
+---------------------------------------------------------------------------------*/
+footer .section-inner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    width: 100%;
+    background-color: rgb(52, 52, 53);
+    color: rgb(153, 156, 199);
+    height: auto;
+    margin-bottom: 0px;
+}
+
+footer .footer-content{
+    margin: 5px;
+    padding: 5px 10px;
+    color: rgb(189, 196, 216);
+}
+
+footer h4 {
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+/*---------------------------
+     Newsletter Signup Form
+------------------------------*/
+.embed-form{
+    background-color: yellow;
+    color: black;
+    margin: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.embed-form p{
+    font-weight: 900;
+}
+.embed-form:hover{
+    box-shadow: 0 0 20px rgba(240, 235, 235, 0.9);    
+}
+.embed-form #mc-embedded-subscribe-form input[type=email], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+}
+.embed-form input[type=submit]{
+    width: 100%;
+    background-color: gold;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.embed-form input[type=submit]:hover{
+    background-color: rgb(197, 170, 19);
+}
+
+@media (min-width: 700px){
+   
+}
+/*******************************************/
+small{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 255, 0);
+}
+
+.contact-email{
+    font-size: 15px;
+    color:  gold;
+    /* text-decoration: none; */
+}
+
